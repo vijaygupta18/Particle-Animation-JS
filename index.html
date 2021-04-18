@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Animation</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mainCanvas {
+            background-color:black;
+            position: fixed;
+            z-index: -1;
+        }
+
+        #mainBody {
+            position: absolute;
+            margin: auto;
+            z-index: 0;
+            width: max-content;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: max-content;
+           
+        }
+        button{
+            text-align: center;
+            font-family: cursive;
+           width: 8rem;
+           font-weight: bolder;
+           height: 4rem;
+           padding: 1rem 1rem 1rem 1rem;
+           background: rgba(0, 0, 0, 0.3);
+           color: white;
+           font-size: larger;
+           border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mainCanvas"></canvas>
+    <div id="mainBody">
+        <button onclick="location.reload();">Change</button>
+    </div>
+
+    <script src="./canvas.js"></script>
+</body>
+</html>
